@@ -93,7 +93,7 @@ class Encoder:
         Example:
             >>> from bencode.encoder import Encoder
             >>> encoder = Encoder()
-            >>> encoder.encode_dictionary({"key": "value"})
+            >>> encoder.encode_dictionary({"foo": "bar"})
             b'd3:foo3:bare'
         """
         result = b"d"
