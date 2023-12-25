@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as file:
     long_description = file.read()
 
 setup(
-    name="py-bencode",
+    name="bencode-python",
     version="0.0.1",
     description="Bencode encoder and decoder written in python.",
     long_description=long_description,
@@ -14,11 +14,11 @@ setup(
     url="https://github.com/zrekryu/py-bencode",
     keywords=["bencode", "beecode", "torrent", "bittorrent"],
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=[],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: The Unlicense (Unlicense)",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3"

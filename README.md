@@ -3,7 +3,7 @@ Bencode encoder and decoder written in python.
 
 ## Installation
 ```bash
-pip install py-bencode
+pip install bencode-python
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ Encoding Python data types into bencode format.
 from bencode.encoder import Encoder
 
 encoder = Encoder()
-encoded = encoder.encode(42))
+encoded = encoder.encode(42)
 print(encoded) # b'i42e'
 ```
 
