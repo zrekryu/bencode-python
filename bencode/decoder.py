@@ -217,7 +217,7 @@ class Decoder:
             items.append(item)
         return items if len(items) > 1 else items[0]
     
-    def decode_value(self: "Decoder", value: bytes, index: Optional[int] = 0) -> Tuple[Union[int, bytes, str, List, Dict], int]:
+    def decode_value(self: "Decoder", value: bytes, index: Optional[int] = 0) -> Optional[Tuple[Union[int, bytes, str, List, Dict], int]]:
         """
         Decode a bencode value.
         
