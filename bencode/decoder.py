@@ -226,7 +226,7 @@ class Decoder:
             - index (int, optional): Index position in the bencode data. (default: 0)
         
         Returns:
-            Tuple[Union[int, bytes, str, List, Dict], int]: A tuple of decoded value and next position.
+            Optional[Tuple[Union[int, bytes, str, List, Dict], int]]: A tuple of decoded value and next position.
         """
         character = value[index:index+1]
         if character == b"i":
